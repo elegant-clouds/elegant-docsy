@@ -1,3 +1,114 @@
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: /
+title: Bantu Dev
+enableRobotsTXT: true
+theme:
+  - docsy
+enableGitInfo: true
+contentDir: content/en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+enableMissingTranslationPlaceholders: true
+taxonomies:
+  tag: tags
+  category: categories
+params:
+  taxonomy:
+    taxonomyCloud:
+      - tags
+      - categories
+    taxonomyCloudTitle:
+      - Tag Cloud
+      - Categories
+    taxonomyPageHeader:
+      - tags
+      - categories
+    pygmentsCodeFences: true
+    pygmentsUseClasses: false
+    pygmentsUseClassic: false
+    pygmentsStyle: tango
+  copyright: Bantu by Startup Station.
+  version_menu: Releases
+  archived_version: false
+  version: '0.1'
+  url_latest_version: 'https://doc2.elegantclouds.com'
+  github_repo: 'https://github.com/elegant-clouds/elegant-docsy'
+  algolia_docsearch: false
+  offlineSearch: true
+  prism_syntax_highlighting: false
+  ui:
+    breadcrumb_disable: false
+    footer_about_disable: false
+    navbar_logo: true
+    navbar_translucent_over_cover_disable: false
+    sidebar_menu_compact: false
+    sidebar_search_disable: false
+    feedback:
+      enable: true
+      'yes': >-
+        Glad to hear it! Please <a
+        href="https://github.com/elegant-clouds/elegant-docsy/issues/new">tell us how we
+        can improve</a>.
+      'no': >-
+        Sorry to hear that. Please <a
+        href="https://github.com/elegant-clouds/elegant-docsy/issues/new">tell us how we
+        can improve</a>.
+    readingtime:
+      enable: false
+  links:
+    user:
+      - name: Twitter
+        url: ''
+        icon: fab fa-twitter
+        desc: Follow us on Twitter to get the latest news!
+      - name: Stack Overflow
+        url: ''
+        icon: fab fa-stack-overflow
+        desc: Practical questions and curated answers
+    developer:
+      - name: GitHub
+        url: 'https://github.com/elegant-clouds/elegant-docsy'
+        icon: fab fa-github
+        desc: Development takes place here!
+      - name: Slack
+        url: ''
+        icon: fab fa-slack
+        desc: Chat with other project developers
+permalinks:
+  blog: '/:section/:year/:month/:day/:slug/'
+blackfriday:
+  plainIDAnchors: true
+  hrefTargetBlank: true
+  angledQuotes: false
+  latexDashes: true
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+services:
+  googleAnalytics:
+    id:
+languages:
+  en:
+    title: Bantu Dev
+    description: Bantu Platform (Development)
+    languageName: English
+    weight: 1
+  fr:
+    title: Bantu Dev
+    description: Platforme Bantu (Développement)
+    languageName: Français
+    contentDir: content/fr
+    weight: 2
+    time_format_default: 30.12.2006
+    time_format_blog: 30.12.2006
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: tango
+outputs:
+  section:
+    - HTML
+    - print
+    - RSS
