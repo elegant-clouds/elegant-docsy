@@ -6,6 +6,3 @@ workers_dev = false
 route = "doc2.elegantclouds.com/*"
 [site]
 bucket = "./public"
-[secrets]
-CF_ACCOUNT_ID
-CF_ZONE_ID
