@@ -36,6 +36,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Upgrade NPM
+        run: npm install -g npm
+        
       - run: npm ci
       - run: hugo --minify
 
