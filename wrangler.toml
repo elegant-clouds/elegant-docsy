@@ -1,7 +1,8 @@
 name = "bantu"
 type = "webpack"
 account_id = ""
-workers_dev = true
-
+zone_id = ""
+workers_dev = false
+route = "http://doc2.elegantclouds.com/*"
 [site]
 bucket = "./public"
