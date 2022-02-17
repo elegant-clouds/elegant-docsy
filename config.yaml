@@ -32,6 +32,7 @@ params:
   version: '0.1'
   url_latest_version: 'https://doc2.elegantclouds.com'
   github_repo: 'https://github.com/elegant-clouds/elegant-docsy'
+  github_branch: 'main'
   algolia_docsearch: false
   offlineSearch: true
   prism_syntax_highlighting: false
