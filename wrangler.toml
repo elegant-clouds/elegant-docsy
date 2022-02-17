@@ -3,6 +3,9 @@ type = "webpack"
 account_id = ""
 zone_id = ""
 workers_dev = false
-route = "http://doc2.elegantclouds.com/*"
+route = "doc2.elegantclouds.com/*"
 [site]
 bucket = "./public"
+[secrets]
+CF_ACCOUNT_ID
+CF_ZONE_ID
