@@ -1,0 +1,7 @@
+name = "elegantdocsy"
+type = "webpack"
+account_id = ""
+workers_dev = true
+
+[site]
+bucket = "./public"
